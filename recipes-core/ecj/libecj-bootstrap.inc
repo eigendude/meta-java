@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/EPL-1.0;md5=57f8d5e2b3e98ac6e08
 
 DEPENDS = "classpath-initial-native fastjar-native jikes-initial-native virtual/java-initial-native"
 
-INC_PR = "r5"
+INC_PR = "r0"
 
 inherit native java
 
@@ -50,7 +50,7 @@ do_compile() {
   find source -name '*.java' -print0 \
     | LC_ALL=C sort -z \
     | xargs -0 -n25 -P ${BB_NUMBER_THREADS} \
-        jikes-initial -d build -source 1.4 -sourcepath source
+        jikes-initial -d build -source 1.5 -sourcepath source
 
   fastjar -c -C build . -f ${JAR}
 }
