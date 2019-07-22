@@ -40,5 +40,5 @@ do_configure_append() {
   sed -i -e "s|exec cacao \\$|exec cacao-initial \\$|" src/scripts/java.in
 }
 
-SRC_URI[md5sum] = "8b8907c8b925761c9410bcadb9705346"
-SRC_URI[sha256sum] = "cb9363add825cedf77764fc49a223aaf43f0a9f485b711ba8c92f16b13fff188"
+SRC_URI[md5sum] = "63220327925ace13756ae334c55a3baa"
+SRC_URI[sha256sum] = "1dfc4903dc0172286df4f1740fd0f12749ac81d51c602290b47cbe83d51e1d56"
